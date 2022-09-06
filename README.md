@@ -1,5 +1,5 @@
 # MQTT Topic Validator
-This library is small but easy to use. The purpose of this library is to check the topic of a MQTT object. Why a simple compare function is not always sufficient. A topic must sometimes be compared with wildcards to validate that it is a valid topic. So this library can tell you if a topic is valid against a compared topic which can contain MQTT wildcards.
+This module is small but easy to use. The purpose of this module is to check the topic of a MQTT object if t valid. Why a simple compare function is not always sufficient. A topic must sometimes be compared with wildcards to validate that it is a valid topic. So this library can tell you if a topic is valid against a compared topic which can contain MQTT wildcards.
 ## Validation processes
 The code contains seven methods to validate that the topic is valid against the compared topic.
 ### Compare method 1
@@ -19,7 +19,7 @@ This method confirms is basically when all checks is confirmed to be valid and t
 ## Code sample
 This following code is actually how I tested that all methods correctly functioned as intended, is also provided in this module.
 ```
-import mqttTopicIsValid from './mqtttopicvalidator.js';
+import mqttTopicIsValid from './node_modules/@teamcoder/mqtttopicvalidator/mqtttopicvalidator.js';
 
 console.log( "Testing Condition 1 Passed = " + mqttTopicIsValid(  "myhome/groundfloor/livingroom/temperature" , "myhome/groundfloor/livingroom/temperature"     ) );
 console.log( "Testing Condition 2 Passed = " + mqttTopicIsValid(  "myhome/groundfloor/livingroom/temperature" , "#"                                             ) );
@@ -43,17 +43,18 @@ Testing Condition 7 Passed = true
 ```
 @param  { String  }  source  The source string to be compared
 @param  { String  }  target  The target string to be compared 
-@return { Boolean }          The string passed/failed validation
+@return { Boolean }          Validation passed or failed
 ```
 ## Version History
 | Version  | Date                   | Remark                              |
 |----------|------------------------|-------------------------------------|
 | 1.0.0    | 06 September 2022      | Official first release              |
+| 1.0.1    | 06 September 2022      | Correcting documentation            |
 ## How To Install
 Run the following command in a terminal or command prompt in the folder you want to install the module to.
 > npm i @teamcoder/mqtttopicvalidator
 ## Operating Systems Tested On
->Windows and Linux
+>Windows, Linux and RaspberryPi
 ## License Information
-BiggerValidator © 2022 by Adriaan J. van Rensburg (CreepyCoderMC) is licensed under CC BY-NC-ND 4.0.
+MqttTopicValidator © 2022 by Adriaan J. van Rensburg (CreepyCoderMC) is licensed under CC BY-NC-ND 4.0.
 > To view a online copy of this license, visit [http://creativecommons.org/licenses/by-nc-nd/4.0/](http://creativecommons.org/licenses/by-nc-nd/4.0/)

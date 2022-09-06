@@ -228,12 +228,13 @@
  /*     VERSION HISTORY
   *
   *     1.0.0       06 September 2022           Official first release
+  *     1.0.1       06 September 2022           Correcting documentation
   */
 
  /* Validates MQTT topics with wildcard support
   * @param  { String  }  source  The source string to be compared
   * @param  { String  }  target  The target string to be compared 
-  * @return { Boolean }          The string passed/failed validation
+  * @return { Boolean }          Validation passed or failed
   */
 
 export default function mqttTopicIsValid( source , target ) {
