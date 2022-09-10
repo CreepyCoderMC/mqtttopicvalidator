@@ -1,4 +1,4 @@
-import mqttTopicIsValid from './mqtttopicvalidator.js';
+import { mqttTopicIsValid } from '@teamcoder/mqtttopicvalidator';
 
 console.log( "Testing Condition 1 Passed = " + mqttTopicIsValid(  "myhome/groundfloor/livingroom/temperature" , "myhome/groundfloor/livingroom/temperature"     ) );
 console.log( "Testing Condition 2 Passed = " + mqttTopicIsValid(  "myhome/groundfloor/livingroom/temperature" , "#"                                             ) );

@@ -2,7 +2,7 @@
 
   "type": "module",
   "name": "@teamcoder/mqtttopicvalidator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This module is small but easy to use. The purpose of this module is to check the topic of a MQTT object if t valid. Why a simple compare function is not always sufficient. A topic must sometimes be compared with wildcards to validate that it is a valid topic. So this library can tell you if a topic is valid against a compared topic which can contain MQTT wildcards.",
   "main": "./mqtttopicvalidator.js",
 
@@ -18,7 +18,7 @@
   ],
 
   "author":       "CreepyCoderMC",
-  "license":      "CC BY-NC-ND 4.0",
+  "license":      "CC-BY-NC-ND-4.0",
   "homepage":     "https://github.com/CreepyCoderMC",
   "url":          "https://github.com/CreepyCoderMC/mqtttopicvalidator/issues",
   "email":        "creepycodermc@gmail.com",

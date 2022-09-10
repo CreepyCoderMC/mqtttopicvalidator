@@ -230,11 +230,13 @@
   *     1.0.0       06 September 2022           Official first release
   *     1.0.1       06 September 2022           Correcting documentation
   *     1.0.2       09 September 2022           Fixed package.json so that npm can install on any os
+  *     1.0.3       10 September 2022           Fixed code to be proper npm package
   */
 
  /* Validates MQTT topics with wildcard support
   * @param  { String  }  source  The source string to be compared
   * @param  { String  }  target  The target string to be compared 
+  * 
   * @return { Boolean }          Validation passed or failed
   */
 

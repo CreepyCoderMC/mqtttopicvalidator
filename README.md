@@ -19,7 +19,7 @@ This method confirms is basically when all checks is confirmed to be valid and t
 ## Code sample
 This following code is actually how I tested that all methods correctly functioned as intended, is also provided in this module.
 ```
-import mqttTopicIsValid from './node_modules/@teamcoder/mqtttopicvalidator/mqtttopicvalidator.js';
+import { mqttTopicIsValid } from '@teamcoder/mqtttopicvalidator';
 
 console.log( "Testing Condition 1 Passed = " + mqttTopicIsValid(  "myhome/groundfloor/livingroom/temperature" , "myhome/groundfloor/livingroom/temperature"     ) );
 console.log( "Testing Condition 2 Passed = " + mqttTopicIsValid(  "myhome/groundfloor/livingroom/temperature" , "#"                                             ) );
@@ -42,7 +42,8 @@ Testing Condition 7 Passed = true
 ## Function Parameters
 ```
 @param  { String  }  source  The source string to be compared
-@param  { String  }  target  The target string to be compared 
+@param  { String  }  target  The target string to be compared
+
 @return { Boolean }          Validation passed or failed
 ```
 ## Version History
@@ -51,6 +52,7 @@ Testing Condition 7 Passed = true
 | 1.0.0    | 06 September 2022      | Official first release                                |
 | 1.0.1    | 06 September 2022      | Correcting documentation                              |
 | 1.0.2    | 09 September 2022      | Fixed package.json so that npm can install on any os  |
+| 1.0.3    | 10 September 2022      | Fixed code to be proper npm package                   |
 ## How To Install
 Run the following command in a terminal or command prompt in the folder you want to install the module to.
 > npm i @teamcoder/mqtttopicvalidator
