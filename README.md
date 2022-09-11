@@ -40,20 +40,36 @@ Testing Condition 6 Passed = true
 Testing Condition 7 Passed = true
 ```
 ## Function Parameters
+### Parameters Passed
 ```
 @param  { String  }  source  The source string to be compared
 @param  { String  }  target  The target string to be compared
-
+```
+### Parameters Returned
+```
 @return { Boolean }          Validation passed or failed
 ```
+## Notes Before You Start
+Very important to remember to always include the following in your main project package.json file:
+```
+"type": "module"
+```
+Without this entry in the package file you will get the following error if you try to run your project
+```
+(node:15500) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use 'node --trace-warnings ...' to show where the warning was created)
+C:\Users\ ... \mqtttopicvalidator\mqtttopicvalidator.js:1
+import { mqttTopicIsValid } from '@teamcoder/mqtttopicvalidator';
+```
 ## Version History
-| Version  | Date                   | Remark                                                |
-|----------|------------------------|-------------------------------------------------------|
-| 1.0.0    | 06 September 2022      | Official first release                                |
-| 1.0.1    | 06 September 2022      | Correcting documentation                              |
-| 1.0.2    | 09 September 2022      | Fixed package.json so that npm can install on any os  |
-| 1.0.3    | 10 September 2022      | Fixed code to be proper npm package                   |
-| 1.0.4    | 10 September 2022      | Correcting documentation                              |
+| Version  | Date                   | Remark                                                                                                |
+|----------|------------------------|-------------------------------------------------------------------------------------------------------|
+| 1.0.0    | 06 September 2022      | Official first release                                                                                |
+| 1.0.1    | 06 September 2022      | Correcting documentation                                                                              |
+| 1.0.2    | 09 September 2022      | Fixed package.json so that npm can install on any os                                                  |
+| 1.0.3    | 10 September 2022      | Fixed code to be proper npm package                                                                   |
+| 1.0.4    | 10 September 2022      | Correcting documentation                                                                              |
+| 1.0.5    | 11 September 2022      | Removed Default from export function in longervalidator.js file                                       |
 ## How To Install
 Run the following command in a terminal or command prompt in the folder you want to install the module to.
 > npm i @teamcoder/mqtttopicvalidator

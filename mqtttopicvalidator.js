@@ -232,6 +232,7 @@
   *     1.0.2       09 September 2022           Fixed package.json so that npm can install on any os
   *     1.0.3       10 September 2022           Fixed code to be proper npm package
   *     1.0.4       10 September 2022           Correcting documentation
+  *     1.0.5       11 September 2022           Removed Default from export function in mqtttopicvalidator.js file
   */
 
  /* Validates MQTT topics with wildcard support
@@ -241,7 +242,7 @@
   * @return { Boolean }          Validation passed or failed
   */
 
-export default function mqttTopicIsValid ( source , target ) {
+export function mqttTopicIsValid ( source , target ) {
  
     // Check if source and compare is target to each other
     if( source   == target )                                   return true;                // Condition 1
